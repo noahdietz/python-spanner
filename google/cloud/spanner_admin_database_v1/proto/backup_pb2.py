@@ -1004,6 +1004,7 @@ Backup = _reflection.GeneratedProtocolMessageType(
         "DESCRIPTOR": _BACKUP,
         "__module__": "google.cloud.spanner_admin_database_v1.proto.backup_pb2",
         "__doc__": """A backup of a Cloud Spanner database.
+  
   Attributes:
       database:
           Required for the [CreateBackup][google.spanner.admin.database.
@@ -1064,6 +1065,7 @@ CreateBackupRequest = _reflection.GeneratedProtocolMessageType(
         "__module__": "google.cloud.spanner_admin_database_v1.proto.backup_pb2",
         "__doc__": """The request for [CreateBackup][google.spanner.admin.database.v1.Databa
   seAdmin.CreateBackup].
+  
   Attributes:
       parent:
           Required. The name of the instance in which the backup will be
@@ -1093,6 +1095,7 @@ CreateBackupMetadata = _reflection.GeneratedProtocolMessageType(
         "__module__": "google.cloud.spanner_admin_database_v1.proto.backup_pb2",
         "__doc__": """Metadata type for the operation returned by [CreateBackup][google.span
   ner.admin.database.v1.DatabaseAdmin.CreateBackup].
+  
   Attributes:
       name:
           The name of the backup being created.
@@ -1129,6 +1132,7 @@ UpdateBackupRequest = _reflection.GeneratedProtocolMessageType(
         "__module__": "google.cloud.spanner_admin_database_v1.proto.backup_pb2",
         "__doc__": """The request for [UpdateBackup][google.spanner.admin.database.v1.Databa
   seAdmin.UpdateBackup].
+  
   Attributes:
       backup:
           Required. The backup to update. ``backup.name``, and the
@@ -1156,6 +1160,7 @@ GetBackupRequest = _reflection.GeneratedProtocolMessageType(
         "__module__": "google.cloud.spanner_admin_database_v1.proto.backup_pb2",
         "__doc__": """The request for
   [GetBackup][google.spanner.admin.database.v1.DatabaseAdmin.GetBackup].
+  
   Attributes:
       name:
           Required. Name of the backup. Values are of the form
@@ -1174,6 +1179,7 @@ DeleteBackupRequest = _reflection.GeneratedProtocolMessageType(
         "__module__": "google.cloud.spanner_admin_database_v1.proto.backup_pb2",
         "__doc__": """The request for [DeleteBackup][google.spanner.admin.database.v1.Databa
   seAdmin.DeleteBackup].
+  
   Attributes:
       name:
           Required. Name of the backup to delete. Values are of the form
@@ -1192,6 +1198,7 @@ ListBackupsRequest = _reflection.GeneratedProtocolMessageType(
         "__module__": "google.cloud.spanner_admin_database_v1.proto.backup_pb2",
         "__doc__": """The request for [ListBackups][google.spanner.admin.database.v1.Databas
   eAdmin.ListBackups].
+  
   Attributes:
       parent:
           Required. The instance to list backups from. Values are of the
@@ -1247,6 +1254,7 @@ ListBackupsResponse = _reflection.GeneratedProtocolMessageType(
         "__module__": "google.cloud.spanner_admin_database_v1.proto.backup_pb2",
         "__doc__": """The response for [ListBackups][google.spanner.admin.database.v1.Databa
   seAdmin.ListBackups].
+  
   Attributes:
       backups:
           The list of matching backups. Backups returned are ordered by
@@ -1270,6 +1278,7 @@ ListBackupOperationsRequest = _reflection.GeneratedProtocolMessageType(
         "__module__": "google.cloud.spanner_admin_database_v1.proto.backup_pb2",
         "__doc__": """The request for [ListBackupOperations][google.spanner.admin.database.v
   1.DatabaseAdmin.ListBackupOperations].
+  
   Attributes:
       parent:
           Required. The instance of the backup operations. Values are of
@@ -1332,6 +1341,7 @@ ListBackupOperationsResponse = _reflection.GeneratedProtocolMessageType(
         "__module__": "google.cloud.spanner_admin_database_v1.proto.backup_pb2",
         "__doc__": """The response for [ListBackupOperations][google.spanner.admin.database.
   v1.DatabaseAdmin.ListBackupOperations].
+  
   Attributes:
       operations:
           The list of matching backup [long-running
@@ -1361,6 +1371,7 @@ BackupInfo = _reflection.GeneratedProtocolMessageType(
         "DESCRIPTOR": _BACKUPINFO,
         "__module__": "google.cloud.spanner_admin_database_v1.proto.backup_pb2",
         "__doc__": """Information about a backup.
+  
   Attributes:
       backup:
           Name of the backup.

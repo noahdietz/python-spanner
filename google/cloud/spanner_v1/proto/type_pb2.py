@@ -331,6 +331,7 @@ Type = _reflection.GeneratedProtocolMessageType(
         "__module__": "google.cloud.spanner_v1.proto.type_pb2",
         "__doc__": """\ ``Type`` indicates the type of a Cloud Spanner value, as might be
   stored in a table cell or returned from an SQL query.
+  
   Attributes:
       code:
           Required. The [TypeCode][google.spanner.v1.TypeCode] for this
@@ -361,6 +362,7 @@ StructType = _reflection.GeneratedProtocolMessageType(
                 "DESCRIPTOR": _STRUCTTYPE_FIELD,
                 "__module__": "google.cloud.spanner_v1.proto.type_pb2",
                 "__doc__": """Message representing a single field of a struct.
+    
     Attributes:
         name:
             The name of the field. For reads, this is the column name. For
@@ -380,6 +382,7 @@ StructType = _reflection.GeneratedProtocolMessageType(
         "__module__": "google.cloud.spanner_v1.proto.type_pb2",
         "__doc__": """\ ``StructType`` defines the fields of a
   [STRUCT][google.spanner.v1.TypeCode.STRUCT] type.
+  
   Attributes:
       fields:
           The list of fields that make up this struct. Order is

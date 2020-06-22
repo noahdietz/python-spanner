@@ -348,6 +348,7 @@ Mutation = _reflection.GeneratedProtocolMessageType(
     [update][google.spanner.v1.Mutation.update],
     [insert_or_update][google.spanner.v1.Mutation.insert_or_update], and
     [replace][google.spanner.v1.Mutation.replace] operations.
+    
     Attributes:
         table:
             Required. The table whose rows will be written.
@@ -380,6 +381,7 @@ Mutation = _reflection.GeneratedProtocolMessageType(
                 "DESCRIPTOR": _MUTATION_DELETE,
                 "__module__": "google.cloud.spanner_v1.proto.mutation_pb2",
                 "__doc__": """Arguments to [delete][google.spanner.v1.Mutation.delete] operations.
+    
     Attributes:
         table:
             Required. The table whose rows will be deleted.
@@ -400,6 +402,7 @@ Mutation = _reflection.GeneratedProtocolMessageType(
         "__doc__": """A modification to one or more Cloud Spanner rows. Mutations can be
   applied to a Cloud Spanner database by sending them in a
   [Commit][google.spanner.v1.Spanner.Commit] call.
+  
   Attributes:
       operation:
           Required. The operation to perform.

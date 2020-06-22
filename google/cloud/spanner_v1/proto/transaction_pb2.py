@@ -587,6 +587,7 @@ TransactionOptions = _reflection.GeneratedProtocolMessageType(
                 "DESCRIPTOR": _TRANSACTIONOPTIONS_READONLY,
                 "__module__": "google.cloud.spanner_v1.proto.transaction_pb2",
                 "__doc__": """Message type to initiate a read-only transaction.
+    
     Attributes:
         timestamp_bound:
             How to choose the timestamp for the read-only transaction.
@@ -834,6 +835,7 @@ TransactionOptions = _reflection.GeneratedProtocolMessageType(
   above, Partitioned DML is good fit for large, database-wide,
   operations that are idempotent, such as deleting old rows from a very
   large table.
+  
   Attributes:
       mode:
           Required. The type of transaction.
@@ -868,6 +870,7 @@ Transaction = _reflection.GeneratedProtocolMessageType(
         "DESCRIPTOR": _TRANSACTION,
         "__module__": "google.cloud.spanner_v1.proto.transaction_pb2",
         "__doc__": """A transaction.
+  
   Attributes:
       id:
           \ ``id`` may be used to identify the transaction in subsequent
@@ -901,6 +904,7 @@ TransactionSelector = _reflection.GeneratedProtocolMessageType(
   [ExecuteSql][google.spanner.v1.Spanner.ExecuteSql] call runs.  See
   [TransactionOptions][google.spanner.v1.TransactionOptions] for more
   information about transactions.
+  
   Attributes:
       selector:
           If no fields are set, the default is a single use transaction

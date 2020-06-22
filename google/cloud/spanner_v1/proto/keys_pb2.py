@@ -314,6 +314,7 @@ KeyRange = _reflection.GeneratedProtocolMessageType(
   ["100"]    "end_closed": ["1"]  Note that 100 is passed as the start,
   and 1 is passed as the end, because ``Key`` is a descending column in
   the schema.
+  
   Attributes:
       start_key_type:
           The start key must be provided. It can be either closed or
@@ -352,6 +353,7 @@ KeySet = _reflection.GeneratedProtocolMessageType(
   specified multiple times in the set (for example if two ranges, two
   keys, or a key and a range overlap), Cloud Spanner behaves as if the
   key were only specified once.
+  
   Attributes:
       keys:
           A list of specific keys. Entries in ``keys`` should have

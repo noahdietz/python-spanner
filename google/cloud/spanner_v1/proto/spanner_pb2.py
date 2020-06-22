@@ -2424,6 +2424,7 @@ CreateSessionRequest = _reflection.GeneratedProtocolMessageType(
         "__module__": "google.cloud.spanner_v1.proto.spanner_pb2",
         "__doc__": """The request for
   [CreateSession][google.spanner.v1.Spanner.CreateSession].
+  
   Attributes:
       database:
           Required. The database in which the new session is created.
@@ -2443,6 +2444,7 @@ BatchCreateSessionsRequest = _reflection.GeneratedProtocolMessageType(
         "__module__": "google.cloud.spanner_v1.proto.spanner_pb2",
         "__doc__": """The request for
   [BatchCreateSessions][google.spanner.v1.Spanner.BatchCreateSessions].
+  
   Attributes:
       database:
           Required. The database in which the new sessions are created.
@@ -2469,6 +2471,7 @@ BatchCreateSessionsResponse = _reflection.GeneratedProtocolMessageType(
         "__module__": "google.cloud.spanner_v1.proto.spanner_pb2",
         "__doc__": """The response for
   [BatchCreateSessions][google.spanner.v1.Spanner.BatchCreateSessions].
+  
   Attributes:
       session:
           The freshly created sessions.
@@ -2494,6 +2497,7 @@ Session = _reflection.GeneratedProtocolMessageType(
         "DESCRIPTOR": _SESSION,
         "__module__": "google.cloud.spanner_v1.proto.spanner_pb2",
         "__doc__": """A session in the Cloud Spanner API.
+  
   Attributes:
       name:
           The name of the session. This is always system-assigned;
@@ -2528,6 +2532,7 @@ GetSessionRequest = _reflection.GeneratedProtocolMessageType(
         "DESCRIPTOR": _GETSESSIONREQUEST,
         "__module__": "google.cloud.spanner_v1.proto.spanner_pb2",
         "__doc__": """The request for [GetSession][google.spanner.v1.Spanner.GetSession].
+  
   Attributes:
       name:
           Required. The name of the session to retrieve.
@@ -2545,6 +2550,7 @@ ListSessionsRequest = _reflection.GeneratedProtocolMessageType(
         "__module__": "google.cloud.spanner_v1.proto.spanner_pb2",
         "__doc__": """The request for
   [ListSessions][google.spanner.v1.Spanner.ListSessions].
+  
   Attributes:
       database:
           Required. The database in which to list sessions.
@@ -2578,6 +2584,7 @@ ListSessionsResponse = _reflection.GeneratedProtocolMessageType(
         "__module__": "google.cloud.spanner_v1.proto.spanner_pb2",
         "__doc__": """The response for
   [ListSessions][google.spanner.v1.Spanner.ListSessions].
+  
   Attributes:
       sessions:
           The list of requested sessions.
@@ -2599,6 +2606,7 @@ DeleteSessionRequest = _reflection.GeneratedProtocolMessageType(
         "__module__": "google.cloud.spanner_v1.proto.spanner_pb2",
         "__doc__": """The request for
   [DeleteSession][google.spanner.v1.Spanner.DeleteSession].
+  
   Attributes:
       name:
           Required. The name of the session to delete.
@@ -2619,6 +2627,7 @@ ExecuteSqlRequest = _reflection.GeneratedProtocolMessageType(
                 "DESCRIPTOR": _EXECUTESQLREQUEST_QUERYOPTIONS,
                 "__module__": "google.cloud.spanner_v1.proto.spanner_pb2",
                 "__doc__": """Query optimizer configuration.
+    
     Attributes:
         optimizer_version:
             An option to control the selection of optimizer version.  This
@@ -2652,6 +2661,7 @@ ExecuteSqlRequest = _reflection.GeneratedProtocolMessageType(
         "__module__": "google.cloud.spanner_v1.proto.spanner_pb2",
         "__doc__": """The request for [ExecuteSql][google.spanner.v1.Spanner.ExecuteSql] and
   [ExecuteStreamingSql][google.spanner.v1.Spanner.ExecuteStreamingSql].
+  
   Attributes:
       session:
           Required. The session in which the SQL query should be
@@ -2750,6 +2760,7 @@ ExecuteBatchDmlRequest = _reflection.GeneratedProtocolMessageType(
                 "DESCRIPTOR": _EXECUTEBATCHDMLREQUEST_STATEMENT,
                 "__module__": "google.cloud.spanner_v1.proto.spanner_pb2",
                 "__doc__": """A single DML statement.
+    
     Attributes:
         sql:
             Required. The DML string.
@@ -2781,6 +2792,7 @@ ExecuteBatchDmlRequest = _reflection.GeneratedProtocolMessageType(
         "__module__": "google.cloud.spanner_v1.proto.spanner_pb2",
         "__doc__": """The request for
   [ExecuteBatchDml][google.spanner.v1.Spanner.ExecuteBatchDml].
+  
   Attributes:
       session:
           Required. The session in which the DML statements should be
@@ -2842,6 +2854,7 @@ ExecuteBatchDmlResponse = _reflection.GeneratedProtocolMessageType(
   [ResultSet][google.spanner.v1.ResultSet] messages indicates that the
   third statement failed, and the fourth and fifth statements were not
   executed.
+  
   Attributes:
       result_sets:
           One [ResultSet][google.spanner.v1.ResultSet] for each
@@ -2871,6 +2884,7 @@ PartitionOptions = _reflection.GeneratedProtocolMessageType(
         "DESCRIPTOR": _PARTITIONOPTIONS,
         "__module__": "google.cloud.spanner_v1.proto.spanner_pb2",
         "__doc__": """Options for a PartitionQueryRequest and PartitionReadRequest.
+  
   Attributes:
       partition_size_bytes:
           \ **Note:** This hint is currently ignored by PartitionQuery
@@ -2909,6 +2923,7 @@ PartitionQueryRequest = _reflection.GeneratedProtocolMessageType(
         "__module__": "google.cloud.spanner_v1.proto.spanner_pb2",
         "__doc__": """The request for
   [PartitionQuery][google.spanner.v1.Spanner.PartitionQuery]
+  
   Attributes:
       session:
           Required. The session used to create the partitions.
@@ -2965,6 +2980,7 @@ PartitionReadRequest = _reflection.GeneratedProtocolMessageType(
         "__module__": "google.cloud.spanner_v1.proto.spanner_pb2",
         "__doc__": """The request for
   [PartitionRead][google.spanner.v1.Spanner.PartitionRead]
+  
   Attributes:
       session:
           Required. The session used to create the partitions.
@@ -3018,6 +3034,7 @@ Partition = _reflection.GeneratedProtocolMessageType(
         "__module__": "google.cloud.spanner_v1.proto.spanner_pb2",
         "__doc__": """Information returned for each partition returned in a
   PartitionResponse.
+  
   Attributes:
       partition_token:
           This token can be passed to Read, StreamingRead, ExecuteSql,
@@ -3038,6 +3055,7 @@ PartitionResponse = _reflection.GeneratedProtocolMessageType(
         "__doc__": """The response for
   [PartitionQuery][google.spanner.v1.Spanner.PartitionQuery] or
   [PartitionRead][google.spanner.v1.Spanner.PartitionRead]
+  
   Attributes:
       partitions:
           Partitions created by this request.
@@ -3057,6 +3075,7 @@ ReadRequest = _reflection.GeneratedProtocolMessageType(
         "__module__": "google.cloud.spanner_v1.proto.spanner_pb2",
         "__doc__": """The request for [Read][google.spanner.v1.Spanner.Read] and
   [StreamingRead][google.spanner.v1.Spanner.StreamingRead].
+  
   Attributes:
       session:
           Required. The session in which the read should be performed.
@@ -3128,6 +3147,7 @@ BeginTransactionRequest = _reflection.GeneratedProtocolMessageType(
         "__module__": "google.cloud.spanner_v1.proto.spanner_pb2",
         "__doc__": """The request for
   [BeginTransaction][google.spanner.v1.Spanner.BeginTransaction].
+  
   Attributes:
       session:
           Required. The session in which the transaction runs.
@@ -3146,6 +3166,7 @@ CommitRequest = _reflection.GeneratedProtocolMessageType(
         "DESCRIPTOR": _COMMITREQUEST,
         "__module__": "google.cloud.spanner_v1.proto.spanner_pb2",
         "__doc__": """The request for [Commit][google.spanner.v1.Spanner.Commit].
+  
   Attributes:
       session:
           Required. The session in which the transaction to be committed
@@ -3181,6 +3202,7 @@ CommitResponse = _reflection.GeneratedProtocolMessageType(
         "DESCRIPTOR": _COMMITRESPONSE,
         "__module__": "google.cloud.spanner_v1.proto.spanner_pb2",
         "__doc__": """The response for [Commit][google.spanner.v1.Spanner.Commit].
+  
   Attributes:
       commit_timestamp:
           The Cloud Spanner timestamp at which the transaction
@@ -3198,6 +3220,7 @@ RollbackRequest = _reflection.GeneratedProtocolMessageType(
         "DESCRIPTOR": _ROLLBACKREQUEST,
         "__module__": "google.cloud.spanner_v1.proto.spanner_pb2",
         "__doc__": """The request for [Rollback][google.spanner.v1.Spanner.Rollback].
+  
   Attributes:
       session:
           Required. The session in which the transaction to roll back is
