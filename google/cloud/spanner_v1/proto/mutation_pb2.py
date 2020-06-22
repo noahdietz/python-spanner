@@ -24,6 +24,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
     package="google.spanner.v1",
     syntax="proto3",
     serialized_options=b"\n\025com.google.spanner.v1B\rMutationProtoP\001Z8google.golang.org/genproto/googleapis/spanner/v1;spanner\252\002\027Google.Cloud.Spanner.V1\312\002\027Google\\Cloud\\Spanner\\V1",
+    create_key=_descriptor._internal_create_key,
     serialized_pb=b'\n,google/cloud/spanner_v1/proto/mutation.proto\x12\x11google.spanner.v1\x1a\x1cgoogle/protobuf/struct.proto\x1a(google/cloud/spanner_v1/proto/keys.proto\x1a\x1cgoogle/api/annotations.proto"\xc6\x03\n\x08Mutation\x12\x33\n\x06insert\x18\x01 \x01(\x0b\x32!.google.spanner.v1.Mutation.WriteH\x00\x12\x33\n\x06update\x18\x02 \x01(\x0b\x32!.google.spanner.v1.Mutation.WriteH\x00\x12=\n\x10insert_or_update\x18\x03 \x01(\x0b\x32!.google.spanner.v1.Mutation.WriteH\x00\x12\x34\n\x07replace\x18\x04 \x01(\x0b\x32!.google.spanner.v1.Mutation.WriteH\x00\x12\x34\n\x06\x64\x65lete\x18\x05 \x01(\x0b\x32".google.spanner.v1.Mutation.DeleteH\x00\x1aS\n\x05Write\x12\r\n\x05table\x18\x01 \x01(\t\x12\x0f\n\x07\x63olumns\x18\x02 \x03(\t\x12*\n\x06values\x18\x03 \x03(\x0b\x32\x1a.google.protobuf.ListValue\x1a\x43\n\x06\x44\x65lete\x12\r\n\x05table\x18\x01 \x01(\t\x12*\n\x07key_set\x18\x02 \x01(\x0b\x32\x19.google.spanner.v1.KeySetB\x0b\n\toperationB\x96\x01\n\x15\x63om.google.spanner.v1B\rMutationProtoP\x01Z8google.golang.org/genproto/googleapis/spanner/v1;spanner\xaa\x02\x17Google.Cloud.Spanner.V1\xca\x02\x17Google\\Cloud\\Spanner\\V1b\x06proto3',
     dependencies=[
         google_dot_protobuf_dot_struct__pb2.DESCRIPTOR,
@@ -39,6 +40,7 @@ _MUTATION_WRITE = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="table",
@@ -57,6 +59,7 @@ _MUTATION_WRITE = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="columns",
@@ -75,6 +78,7 @@ _MUTATION_WRITE = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="values",
@@ -93,6 +97,7 @@ _MUTATION_WRITE = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -113,6 +118,7 @@ _MUTATION_DELETE = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="table",
@@ -131,6 +137,7 @@ _MUTATION_DELETE = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="key_set",
@@ -149,6 +156,7 @@ _MUTATION_DELETE = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -169,6 +177,7 @@ _MUTATION = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="insert",
@@ -187,6 +196,7 @@ _MUTATION = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="update",
@@ -205,6 +215,7 @@ _MUTATION = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="insert_or_update",
@@ -223,6 +234,7 @@ _MUTATION = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="replace",
@@ -241,6 +253,7 @@ _MUTATION = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="delete",
@@ -259,6 +272,7 @@ _MUTATION = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -274,6 +288,7 @@ _MUTATION = _descriptor.Descriptor(
             full_name="google.spanner.v1.Mutation.operation",
             index=0,
             containing_type=None,
+            create_key=_descriptor._internal_create_key,
             fields=[],
         )
     ],

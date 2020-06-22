@@ -22,6 +22,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
     package="google.spanner.v1",
     syntax="proto3",
     serialized_options=b"\n\025com.google.spanner.v1B\020TransactionProtoP\001Z8google.golang.org/genproto/googleapis/spanner/v1;spanner\252\002\027Google.Cloud.Spanner.V1\312\002\027Google\\Cloud\\Spanner\\V1",
+    create_key=_descriptor._internal_create_key,
     serialized_pb=b'\n/google/cloud/spanner_v1/proto/transaction.proto\x12\x11google.spanner.v1\x1a\x1egoogle/protobuf/duration.proto\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\x1cgoogle/api/annotations.proto"\xc3\x04\n\x12TransactionOptions\x12\x45\n\nread_write\x18\x01 \x01(\x0b\x32/.google.spanner.v1.TransactionOptions.ReadWriteH\x00\x12O\n\x0fpartitioned_dml\x18\x03 \x01(\x0b\x32\x34.google.spanner.v1.TransactionOptions.PartitionedDmlH\x00\x12\x43\n\tread_only\x18\x02 \x01(\x0b\x32..google.spanner.v1.TransactionOptions.ReadOnlyH\x00\x1a\x0b\n\tReadWrite\x1a\x10\n\x0ePartitionedDml\x1a\xa8\x02\n\x08ReadOnly\x12\x10\n\x06strong\x18\x01 \x01(\x08H\x00\x12\x38\n\x12min_read_timestamp\x18\x02 \x01(\x0b\x32\x1a.google.protobuf.TimestampH\x00\x12\x32\n\rmax_staleness\x18\x03 \x01(\x0b\x32\x19.google.protobuf.DurationH\x00\x12\x34\n\x0eread_timestamp\x18\x04 \x01(\x0b\x32\x1a.google.protobuf.TimestampH\x00\x12\x34\n\x0f\x65xact_staleness\x18\x05 \x01(\x0b\x32\x19.google.protobuf.DurationH\x00\x12\x1d\n\x15return_read_timestamp\x18\x06 \x01(\x08\x42\x11\n\x0ftimestamp_boundB\x06\n\x04mode"M\n\x0bTransaction\x12\n\n\x02id\x18\x01 \x01(\x0c\x12\x32\n\x0eread_timestamp\x18\x02 \x01(\x0b\x32\x1a.google.protobuf.Timestamp"\xa4\x01\n\x13TransactionSelector\x12;\n\nsingle_use\x18\x01 \x01(\x0b\x32%.google.spanner.v1.TransactionOptionsH\x00\x12\x0c\n\x02id\x18\x02 \x01(\x0cH\x00\x12\x36\n\x05\x62\x65gin\x18\x03 \x01(\x0b\x32%.google.spanner.v1.TransactionOptionsH\x00\x42\n\n\x08selectorB\x99\x01\n\x15\x63om.google.spanner.v1B\x10TransactionProtoP\x01Z8google.golang.org/genproto/googleapis/spanner/v1;spanner\xaa\x02\x17Google.Cloud.Spanner.V1\xca\x02\x17Google\\Cloud\\Spanner\\V1b\x06proto3',
     dependencies=[
         google_dot_protobuf_dot_duration__pb2.DESCRIPTOR,
@@ -37,6 +38,7 @@ _TRANSACTIONOPTIONS_READWRITE = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[],
     extensions=[],
     nested_types=[],
@@ -56,6 +58,7 @@ _TRANSACTIONOPTIONS_PARTITIONEDDML = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[],
     extensions=[],
     nested_types=[],
@@ -75,6 +78,7 @@ _TRANSACTIONOPTIONS_READONLY = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="strong",
@@ -93,6 +97,7 @@ _TRANSACTIONOPTIONS_READONLY = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="min_read_timestamp",
@@ -111,6 +116,7 @@ _TRANSACTIONOPTIONS_READONLY = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="max_staleness",
@@ -129,6 +135,7 @@ _TRANSACTIONOPTIONS_READONLY = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="read_timestamp",
@@ -147,6 +154,7 @@ _TRANSACTIONOPTIONS_READONLY = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="exact_staleness",
@@ -165,6 +173,7 @@ _TRANSACTIONOPTIONS_READONLY = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="return_read_timestamp",
@@ -183,6 +192,7 @@ _TRANSACTIONOPTIONS_READONLY = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -198,6 +208,7 @@ _TRANSACTIONOPTIONS_READONLY = _descriptor.Descriptor(
             full_name="google.spanner.v1.TransactionOptions.ReadOnly.timestamp_bound",
             index=0,
             containing_type=None,
+            create_key=_descriptor._internal_create_key,
             fields=[],
         )
     ],
@@ -211,6 +222,7 @@ _TRANSACTIONOPTIONS = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="read_write",
@@ -229,6 +241,7 @@ _TRANSACTIONOPTIONS = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="partitioned_dml",
@@ -247,6 +260,7 @@ _TRANSACTIONOPTIONS = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="read_only",
@@ -265,6 +279,7 @@ _TRANSACTIONOPTIONS = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -284,6 +299,7 @@ _TRANSACTIONOPTIONS = _descriptor.Descriptor(
             full_name="google.spanner.v1.TransactionOptions.mode",
             index=0,
             containing_type=None,
+            create_key=_descriptor._internal_create_key,
             fields=[],
         )
     ],
@@ -298,6 +314,7 @@ _TRANSACTION = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="id",
@@ -316,6 +333,7 @@ _TRANSACTION = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="read_timestamp",
@@ -334,6 +352,7 @@ _TRANSACTION = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -355,6 +374,7 @@ _TRANSACTIONSELECTOR = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="single_use",
@@ -373,6 +393,7 @@ _TRANSACTIONSELECTOR = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="id",
@@ -391,6 +412,7 @@ _TRANSACTIONSELECTOR = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="begin",
@@ -409,6 +431,7 @@ _TRANSACTIONSELECTOR = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -424,6 +447,7 @@ _TRANSACTIONSELECTOR = _descriptor.Descriptor(
             full_name="google.spanner.v1.TransactionSelector.selector",
             index=0,
             containing_type=None,
+            create_key=_descriptor._internal_create_key,
             fields=[],
         )
     ],

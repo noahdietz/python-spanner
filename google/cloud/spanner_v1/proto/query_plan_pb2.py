@@ -21,6 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
     package="google.spanner.v1",
     syntax="proto3",
     serialized_options=b"\n\025com.google.spanner.v1B\016QueryPlanProtoP\001Z8google.golang.org/genproto/googleapis/spanner/v1;spanner\252\002\027Google.Cloud.Spanner.V1\312\002\027Google\\Cloud\\Spanner\\V1",
+    create_key=_descriptor._internal_create_key,
     serialized_pb=b'\n.google/cloud/spanner_v1/proto/query_plan.proto\x12\x11google.spanner.v1\x1a\x1cgoogle/protobuf/struct.proto\x1a\x1cgoogle/api/annotations.proto"\xf8\x04\n\x08PlanNode\x12\r\n\x05index\x18\x01 \x01(\x05\x12.\n\x04kind\x18\x02 \x01(\x0e\x32 .google.spanner.v1.PlanNode.Kind\x12\x14\n\x0c\x64isplay_name\x18\x03 \x01(\t\x12:\n\x0b\x63hild_links\x18\x04 \x03(\x0b\x32%.google.spanner.v1.PlanNode.ChildLink\x12M\n\x14short_representation\x18\x05 \x01(\x0b\x32/.google.spanner.v1.PlanNode.ShortRepresentation\x12)\n\x08metadata\x18\x06 \x01(\x0b\x32\x17.google.protobuf.Struct\x12\x30\n\x0f\x65xecution_stats\x18\x07 \x01(\x0b\x32\x17.google.protobuf.Struct\x1a@\n\tChildLink\x12\x13\n\x0b\x63hild_index\x18\x01 \x01(\x05\x12\x0c\n\x04type\x18\x02 \x01(\t\x12\x10\n\x08variable\x18\x03 \x01(\t\x1a\xb2\x01\n\x13ShortRepresentation\x12\x13\n\x0b\x64\x65scription\x18\x01 \x01(\t\x12S\n\nsubqueries\x18\x02 \x03(\x0b\x32?.google.spanner.v1.PlanNode.ShortRepresentation.SubqueriesEntry\x1a\x31\n\x0fSubqueriesEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\x05:\x02\x38\x01"8\n\x04Kind\x12\x14\n\x10KIND_UNSPECIFIED\x10\x00\x12\x0e\n\nRELATIONAL\x10\x01\x12\n\n\x06SCALAR\x10\x02"<\n\tQueryPlan\x12/\n\nplan_nodes\x18\x01 \x03(\x0b\x32\x1b.google.spanner.v1.PlanNodeB\x97\x01\n\x15\x63om.google.spanner.v1B\x0eQueryPlanProtoP\x01Z8google.golang.org/genproto/googleapis/spanner/v1;spanner\xaa\x02\x17Google.Cloud.Spanner.V1\xca\x02\x17Google\\Cloud\\Spanner\\V1b\x06proto3',
     dependencies=[
         google_dot_protobuf_dot_struct__pb2.DESCRIPTOR,
@@ -34,6 +35,7 @@ _PLANNODE_KIND = _descriptor.EnumDescriptor(
     full_name="google.spanner.v1.PlanNode.Kind",
     filename=None,
     file=DESCRIPTOR,
+    create_key=_descriptor._internal_create_key,
     values=[
         _descriptor.EnumValueDescriptor(
             name="KIND_UNSPECIFIED",
@@ -41,12 +43,23 @@ _PLANNODE_KIND = _descriptor.EnumDescriptor(
             number=0,
             serialized_options=None,
             type=None,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.EnumValueDescriptor(
-            name="RELATIONAL", index=1, number=1, serialized_options=None, type=None
+            name="RELATIONAL",
+            index=1,
+            number=1,
+            serialized_options=None,
+            type=None,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.EnumValueDescriptor(
-            name="SCALAR", index=2, number=2, serialized_options=None, type=None
+            name="SCALAR",
+            index=2,
+            number=2,
+            serialized_options=None,
+            type=None,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     containing_type=None,
@@ -63,6 +76,7 @@ _PLANNODE_CHILDLINK = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="child_index",
@@ -81,6 +95,7 @@ _PLANNODE_CHILDLINK = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="type",
@@ -99,6 +114,7 @@ _PLANNODE_CHILDLINK = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="variable",
@@ -117,6 +133,7 @@ _PLANNODE_CHILDLINK = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -137,6 +154,7 @@ _PLANNODE_SHORTREPRESENTATION_SUBQUERIESENTRY = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="key",
@@ -155,6 +173,7 @@ _PLANNODE_SHORTREPRESENTATION_SUBQUERIESENTRY = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="value",
@@ -173,6 +192,7 @@ _PLANNODE_SHORTREPRESENTATION_SUBQUERIESENTRY = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -193,6 +213,7 @@ _PLANNODE_SHORTREPRESENTATION = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="description",
@@ -211,6 +232,7 @@ _PLANNODE_SHORTREPRESENTATION = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="subqueries",
@@ -229,6 +251,7 @@ _PLANNODE_SHORTREPRESENTATION = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -249,6 +272,7 @@ _PLANNODE = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="index",
@@ -267,6 +291,7 @@ _PLANNODE = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="kind",
@@ -285,6 +310,7 @@ _PLANNODE = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="display_name",
@@ -303,6 +329,7 @@ _PLANNODE = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="child_links",
@@ -321,6 +348,7 @@ _PLANNODE = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="short_representation",
@@ -339,6 +367,7 @@ _PLANNODE = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="metadata",
@@ -357,6 +386,7 @@ _PLANNODE = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="execution_stats",
@@ -375,6 +405,7 @@ _PLANNODE = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -396,6 +427,7 @@ _QUERYPLAN = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="plan_nodes",
@@ -414,6 +446,7 @@ _QUERYPLAN = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         )
     ],
     extensions=[],

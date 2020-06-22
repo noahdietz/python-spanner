@@ -21,6 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
     package="google.spanner.v1",
     syntax="proto3",
     serialized_options=b"\n\025com.google.spanner.v1B\tTypeProtoP\001Z8google.golang.org/genproto/googleapis/spanner/v1;spanner\252\002\027Google.Cloud.Spanner.V1\312\002\027Google\\Cloud\\Spanner\\V1",
+    create_key=_descriptor._internal_create_key,
     serialized_pb=b'\n(google/cloud/spanner_v1/proto/type.proto\x12\x11google.spanner.v1\x1a\x1cgoogle/api/annotations.proto"\x9a\x01\n\x04Type\x12)\n\x04\x63ode\x18\x01 \x01(\x0e\x32\x1b.google.spanner.v1.TypeCode\x12\x33\n\x12\x61rray_element_type\x18\x02 \x01(\x0b\x32\x17.google.spanner.v1.Type\x12\x32\n\x0bstruct_type\x18\x03 \x01(\x0b\x32\x1d.google.spanner.v1.StructType"\x7f\n\nStructType\x12\x33\n\x06\x66ields\x18\x01 \x03(\x0b\x32#.google.spanner.v1.StructType.Field\x1a<\n\x05\x46ield\x12\x0c\n\x04name\x18\x01 \x01(\t\x12%\n\x04type\x18\x02 \x01(\x0b\x32\x17.google.spanner.v1.Type*\x8e\x01\n\x08TypeCode\x12\x19\n\x15TYPE_CODE_UNSPECIFIED\x10\x00\x12\x08\n\x04\x42OOL\x10\x01\x12\t\n\x05INT64\x10\x02\x12\x0b\n\x07\x46LOAT64\x10\x03\x12\r\n\tTIMESTAMP\x10\x04\x12\x08\n\x04\x44\x41TE\x10\x05\x12\n\n\x06STRING\x10\x06\x12\t\n\x05\x42YTES\x10\x07\x12\t\n\x05\x41RRAY\x10\x08\x12\n\n\x06STRUCT\x10\tB\x92\x01\n\x15\x63om.google.spanner.v1B\tTypeProtoP\x01Z8google.golang.org/genproto/googleapis/spanner/v1;spanner\xaa\x02\x17Google.Cloud.Spanner.V1\xca\x02\x17Google\\Cloud\\Spanner\\V1b\x06proto3',
     dependencies=[google_dot_api_dot_annotations__pb2.DESCRIPTOR],
 )
@@ -30,6 +31,7 @@ _TYPECODE = _descriptor.EnumDescriptor(
     full_name="google.spanner.v1.TypeCode",
     filename=None,
     file=DESCRIPTOR,
+    create_key=_descriptor._internal_create_key,
     values=[
         _descriptor.EnumValueDescriptor(
             name="TYPE_CODE_UNSPECIFIED",
@@ -37,33 +39,79 @@ _TYPECODE = _descriptor.EnumDescriptor(
             number=0,
             serialized_options=None,
             type=None,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.EnumValueDescriptor(
-            name="BOOL", index=1, number=1, serialized_options=None, type=None
+            name="BOOL",
+            index=1,
+            number=1,
+            serialized_options=None,
+            type=None,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.EnumValueDescriptor(
-            name="INT64", index=2, number=2, serialized_options=None, type=None
+            name="INT64",
+            index=2,
+            number=2,
+            serialized_options=None,
+            type=None,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.EnumValueDescriptor(
-            name="FLOAT64", index=3, number=3, serialized_options=None, type=None
+            name="FLOAT64",
+            index=3,
+            number=3,
+            serialized_options=None,
+            type=None,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.EnumValueDescriptor(
-            name="TIMESTAMP", index=4, number=4, serialized_options=None, type=None
+            name="TIMESTAMP",
+            index=4,
+            number=4,
+            serialized_options=None,
+            type=None,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.EnumValueDescriptor(
-            name="DATE", index=5, number=5, serialized_options=None, type=None
+            name="DATE",
+            index=5,
+            number=5,
+            serialized_options=None,
+            type=None,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.EnumValueDescriptor(
-            name="STRING", index=6, number=6, serialized_options=None, type=None
+            name="STRING",
+            index=6,
+            number=6,
+            serialized_options=None,
+            type=None,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.EnumValueDescriptor(
-            name="BYTES", index=7, number=7, serialized_options=None, type=None
+            name="BYTES",
+            index=7,
+            number=7,
+            serialized_options=None,
+            type=None,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.EnumValueDescriptor(
-            name="ARRAY", index=8, number=8, serialized_options=None, type=None
+            name="ARRAY",
+            index=8,
+            number=8,
+            serialized_options=None,
+            type=None,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.EnumValueDescriptor(
-            name="STRUCT", index=9, number=9, serialized_options=None, type=None
+            name="STRUCT",
+            index=9,
+            number=9,
+            serialized_options=None,
+            type=None,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     containing_type=None,
@@ -92,6 +140,7 @@ _TYPE = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="code",
@@ -110,6 +159,7 @@ _TYPE = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="array_element_type",
@@ -128,6 +178,7 @@ _TYPE = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="struct_type",
@@ -146,6 +197,7 @@ _TYPE = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -167,6 +219,7 @@ _STRUCTTYPE_FIELD = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="name",
@@ -185,6 +238,7 @@ _STRUCTTYPE_FIELD = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="type",
@@ -203,6 +257,7 @@ _STRUCTTYPE_FIELD = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -223,6 +278,7 @@ _STRUCTTYPE = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="fields",
@@ -241,6 +297,7 @@ _STRUCTTYPE = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         )
     ],
     extensions=[],

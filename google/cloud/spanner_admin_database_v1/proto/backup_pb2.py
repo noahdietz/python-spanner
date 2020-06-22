@@ -30,6 +30,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
     package="google.spanner.admin.database.v1",
     syntax="proto3",
     serialized_options=b"\n$com.google.spanner.admin.database.v1B\013BackupProtoP\001ZHgoogle.golang.org/genproto/googleapis/spanner/admin/database/v1;database\252\002&Google.Cloud.Spanner.Admin.Database.V1\312\002&Google\\Cloud\\Spanner\\Admin\\Database\\V1",
+    create_key=_descriptor._internal_create_key,
     serialized_pb=b'\n9google/cloud/spanner_admin_database_v1/proto/backup.proto\x12 google.spanner.admin.database.v1\x1a\x1fgoogle/api/field_behavior.proto\x1a\x19google/api/resource.proto\x1a#google/longrunning/operations.proto\x1a google/protobuf/field_mask.proto\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\x39google/cloud/spanner_admin_database_v1/proto/common.proto\x1a\x1cgoogle/api/annotations.proto"\xcd\x03\n\x06\x42\x61\x63kup\x12\x36\n\x08\x64\x61tabase\x18\x02 \x01(\tB$\xfa\x41!\n\x1fspanner.googleapis.com/Database\x12/\n\x0b\x65xpire_time\x18\x03 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x34\n\x0b\x63reate_time\x18\x04 \x01(\x0b\x32\x1a.google.protobuf.TimestampB\x03\xe0\x41\x03\x12\x17\n\nsize_bytes\x18\x05 \x01(\x03\x42\x03\xe0\x41\x03\x12\x42\n\x05state\x18\x06 \x01(\x0e\x32..google.spanner.admin.database.v1.Backup.StateB\x03\xe0\x41\x03\x12"\n\x15referencing_databases\x18\x07 \x03(\tB\x03\xe0\x41\x03"7\n\x05State\x12\x15\n\x11STATE_UNSPECIFIED\x10\x00\x12\x0c\n\x08\x43REATING\x10\x01\x12\t\n\x05READY\x10\x02:\\\xea\x41Y\n\x1dspanner.googleapis.com/Backup\x12\x38projects/{project}/instances/{instance}/backups/{backup}"\xa5\x01\n\x13\x43reateBackupRequest\x12\x37\n\x06parent\x18\x01 \x01(\tB\'\xe0\x41\x02\xfa\x41!\n\x1fspanner.googleapis.com/Instance\x12\x16\n\tbackup_id\x18\x02 \x01(\tB\x03\xe0\x41\x02\x12=\n\x06\x62\x61\x63kup\x18\x03 \x01(\x0b\x32(.google.spanner.admin.database.v1.BackupB\x03\xe0\x41\x02"\xae\x01\n\x14\x43reateBackupMetadata\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x10\n\x08\x64\x61tabase\x18\x02 \x01(\t\x12\x45\n\x08progress\x18\x03 \x01(\x0b\x32\x33.google.spanner.admin.database.v1.OperationProgress\x12/\n\x0b\x63\x61ncel_time\x18\x04 \x01(\x0b\x32\x1a.google.protobuf.Timestamp"\x8a\x01\n\x13UpdateBackupRequest\x12=\n\x06\x62\x61\x63kup\x18\x01 \x01(\x0b\x32(.google.spanner.admin.database.v1.BackupB\x03\xe0\x41\x02\x12\x34\n\x0bupdate_mask\x18\x02 \x01(\x0b\x32\x1a.google.protobuf.FieldMaskB\x03\xe0\x41\x02"G\n\x10GetBackupRequest\x12\x33\n\x04name\x18\x01 \x01(\tB%\xe0\x41\x02\xfa\x41\x1f\n\x1dspanner.googleapis.com/Backup"J\n\x13\x44\x65leteBackupRequest\x12\x33\n\x04name\x18\x01 \x01(\tB%\xe0\x41\x02\xfa\x41\x1f\n\x1dspanner.googleapis.com/Backup"\x84\x01\n\x12ListBackupsRequest\x12\x37\n\x06parent\x18\x01 \x01(\tB\'\xe0\x41\x02\xfa\x41!\n\x1fspanner.googleapis.com/Instance\x12\x0e\n\x06\x66ilter\x18\x02 \x01(\t\x12\x11\n\tpage_size\x18\x03 \x01(\x05\x12\x12\n\npage_token\x18\x04 \x01(\t"i\n\x13ListBackupsResponse\x12\x39\n\x07\x62\x61\x63kups\x18\x01 \x03(\x0b\x32(.google.spanner.admin.database.v1.Backup\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t"\x8d\x01\n\x1bListBackupOperationsRequest\x12\x37\n\x06parent\x18\x01 \x01(\tB\'\xe0\x41\x02\xfa\x41!\n\x1fspanner.googleapis.com/Instance\x12\x0e\n\x06\x66ilter\x18\x02 \x01(\t\x12\x11\n\tpage_size\x18\x03 \x01(\x05\x12\x12\n\npage_token\x18\x04 \x01(\t"j\n\x1cListBackupOperationsResponse\x12\x31\n\noperations\x18\x01 \x03(\x0b\x32\x1d.google.longrunning.Operation\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t"f\n\nBackupInfo\x12\x0e\n\x06\x62\x61\x63kup\x18\x01 \x01(\t\x12/\n\x0b\x63reate_time\x18\x02 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\x17\n\x0fsource_database\x18\x03 \x01(\tB\xd1\x01\n$com.google.spanner.admin.database.v1B\x0b\x42\x61\x63kupProtoP\x01ZHgoogle.golang.org/genproto/googleapis/spanner/admin/database/v1;database\xaa\x02&Google.Cloud.Spanner.Admin.Database.V1\xca\x02&Google\\Cloud\\Spanner\\Admin\\Database\\V1b\x06proto3',
     dependencies=[
         google_dot_api_dot_field__behavior__pb2.DESCRIPTOR,
@@ -48,6 +49,7 @@ _BACKUP_STATE = _descriptor.EnumDescriptor(
     full_name="google.spanner.admin.database.v1.Backup.State",
     filename=None,
     file=DESCRIPTOR,
+    create_key=_descriptor._internal_create_key,
     values=[
         _descriptor.EnumValueDescriptor(
             name="STATE_UNSPECIFIED",
@@ -55,12 +57,23 @@ _BACKUP_STATE = _descriptor.EnumDescriptor(
             number=0,
             serialized_options=None,
             type=None,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.EnumValueDescriptor(
-            name="CREATING", index=1, number=1, serialized_options=None, type=None
+            name="CREATING",
+            index=1,
+            number=1,
+            serialized_options=None,
+            type=None,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.EnumValueDescriptor(
-            name="READY", index=2, number=2, serialized_options=None, type=None
+            name="READY",
+            index=2,
+            number=2,
+            serialized_options=None,
+            type=None,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     containing_type=None,
@@ -77,6 +90,7 @@ _BACKUP = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="database",
@@ -95,6 +109,7 @@ _BACKUP = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=b"\372A!\n\037spanner.googleapis.com/Database",
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="expire_time",
@@ -113,6 +128,7 @@ _BACKUP = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="name",
@@ -131,6 +147,7 @@ _BACKUP = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="create_time",
@@ -149,6 +166,7 @@ _BACKUP = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=b"\340A\003",
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="size_bytes",
@@ -167,6 +185,7 @@ _BACKUP = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=b"\340A\003",
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="state",
@@ -185,6 +204,7 @@ _BACKUP = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=b"\340A\003",
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="referencing_databases",
@@ -203,6 +223,7 @@ _BACKUP = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=b"\340A\003",
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -224,6 +245,7 @@ _CREATEBACKUPREQUEST = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="parent",
@@ -242,6 +264,7 @@ _CREATEBACKUPREQUEST = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=b"\340A\002\372A!\n\037spanner.googleapis.com/Instance",
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="backup_id",
@@ -260,6 +283,7 @@ _CREATEBACKUPREQUEST = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=b"\340A\002",
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="backup",
@@ -278,6 +302,7 @@ _CREATEBACKUPREQUEST = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=b"\340A\002",
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -299,6 +324,7 @@ _CREATEBACKUPMETADATA = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="name",
@@ -317,6 +343,7 @@ _CREATEBACKUPMETADATA = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="database",
@@ -335,6 +362,7 @@ _CREATEBACKUPMETADATA = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="progress",
@@ -353,6 +381,7 @@ _CREATEBACKUPMETADATA = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="cancel_time",
@@ -371,6 +400,7 @@ _CREATEBACKUPMETADATA = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -392,6 +422,7 @@ _UPDATEBACKUPREQUEST = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="backup",
@@ -410,6 +441,7 @@ _UPDATEBACKUPREQUEST = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=b"\340A\002",
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="update_mask",
@@ -428,6 +460,7 @@ _UPDATEBACKUPREQUEST = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=b"\340A\002",
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -449,6 +482,7 @@ _GETBACKUPREQUEST = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="name",
@@ -467,6 +501,7 @@ _GETBACKUPREQUEST = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=b"\340A\002\372A\037\n\035spanner.googleapis.com/Backup",
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         )
     ],
     extensions=[],
@@ -488,6 +523,7 @@ _DELETEBACKUPREQUEST = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="name",
@@ -506,6 +542,7 @@ _DELETEBACKUPREQUEST = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=b"\340A\002\372A\037\n\035spanner.googleapis.com/Backup",
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         )
     ],
     extensions=[],
@@ -527,6 +564,7 @@ _LISTBACKUPSREQUEST = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="parent",
@@ -545,6 +583,7 @@ _LISTBACKUPSREQUEST = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=b"\340A\002\372A!\n\037spanner.googleapis.com/Instance",
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="filter",
@@ -563,6 +602,7 @@ _LISTBACKUPSREQUEST = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="page_size",
@@ -581,6 +621,7 @@ _LISTBACKUPSREQUEST = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="page_token",
@@ -599,6 +640,7 @@ _LISTBACKUPSREQUEST = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -620,6 +662,7 @@ _LISTBACKUPSRESPONSE = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="backups",
@@ -638,6 +681,7 @@ _LISTBACKUPSRESPONSE = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="next_page_token",
@@ -656,6 +700,7 @@ _LISTBACKUPSRESPONSE = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -677,6 +722,7 @@ _LISTBACKUPOPERATIONSREQUEST = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="parent",
@@ -695,6 +741,7 @@ _LISTBACKUPOPERATIONSREQUEST = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=b"\340A\002\372A!\n\037spanner.googleapis.com/Instance",
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="filter",
@@ -713,6 +760,7 @@ _LISTBACKUPOPERATIONSREQUEST = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="page_size",
@@ -731,6 +779,7 @@ _LISTBACKUPOPERATIONSREQUEST = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="page_token",
@@ -749,6 +798,7 @@ _LISTBACKUPOPERATIONSREQUEST = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -770,6 +820,7 @@ _LISTBACKUPOPERATIONSRESPONSE = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="operations",
@@ -788,6 +839,7 @@ _LISTBACKUPOPERATIONSRESPONSE = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="next_page_token",
@@ -806,6 +858,7 @@ _LISTBACKUPOPERATIONSRESPONSE = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -827,6 +880,7 @@ _BACKUPINFO = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="backup",
@@ -845,6 +899,7 @@ _BACKUPINFO = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="create_time",
@@ -863,6 +918,7 @@ _BACKUPINFO = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="source_database",
@@ -881,6 +937,7 @@ _BACKUPINFO = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],

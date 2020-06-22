@@ -21,6 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
     package="google.spanner.v1",
     syntax="proto3",
     serialized_options=b"\n\025com.google.spanner.v1B\tKeysProtoP\001Z8google.golang.org/genproto/googleapis/spanner/v1;spanner\252\002\027Google.Cloud.Spanner.V1\312\002\027Google\\Cloud\\Spanner\\V1",
+    create_key=_descriptor._internal_create_key,
     serialized_pb=b'\n(google/cloud/spanner_v1/proto/keys.proto\x12\x11google.spanner.v1\x1a\x1cgoogle/protobuf/struct.proto\x1a\x1cgoogle/api/annotations.proto"\xf4\x01\n\x08KeyRange\x12\x32\n\x0cstart_closed\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.ListValueH\x00\x12\x30\n\nstart_open\x18\x02 \x01(\x0b\x32\x1a.google.protobuf.ListValueH\x00\x12\x30\n\nend_closed\x18\x03 \x01(\x0b\x32\x1a.google.protobuf.ListValueH\x01\x12.\n\x08\x65nd_open\x18\x04 \x01(\x0b\x32\x1a.google.protobuf.ListValueH\x01\x42\x10\n\x0estart_key_typeB\x0e\n\x0c\x65nd_key_type"l\n\x06KeySet\x12(\n\x04keys\x18\x01 \x03(\x0b\x32\x1a.google.protobuf.ListValue\x12+\n\x06ranges\x18\x02 \x03(\x0b\x32\x1b.google.spanner.v1.KeyRange\x12\x0b\n\x03\x61ll\x18\x03 \x01(\x08\x42\x92\x01\n\x15\x63om.google.spanner.v1B\tKeysProtoP\x01Z8google.golang.org/genproto/googleapis/spanner/v1;spanner\xaa\x02\x17Google.Cloud.Spanner.V1\xca\x02\x17Google\\Cloud\\Spanner\\V1b\x06proto3',
     dependencies=[
         google_dot_protobuf_dot_struct__pb2.DESCRIPTOR,
@@ -35,6 +36,7 @@ _KEYRANGE = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="start_closed",
@@ -53,6 +55,7 @@ _KEYRANGE = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="start_open",
@@ -71,6 +74,7 @@ _KEYRANGE = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="end_closed",
@@ -89,6 +93,7 @@ _KEYRANGE = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="end_open",
@@ -107,6 +112,7 @@ _KEYRANGE = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -122,6 +128,7 @@ _KEYRANGE = _descriptor.Descriptor(
             full_name="google.spanner.v1.KeyRange.start_key_type",
             index=0,
             containing_type=None,
+            create_key=_descriptor._internal_create_key,
             fields=[],
         ),
         _descriptor.OneofDescriptor(
@@ -129,6 +136,7 @@ _KEYRANGE = _descriptor.Descriptor(
             full_name="google.spanner.v1.KeyRange.end_key_type",
             index=1,
             containing_type=None,
+            create_key=_descriptor._internal_create_key,
             fields=[],
         ),
     ],
@@ -143,6 +151,7 @@ _KEYSET = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="keys",
@@ -161,6 +170,7 @@ _KEYSET = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="ranges",
@@ -179,6 +189,7 @@ _KEYSET = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="all",
@@ -197,6 +208,7 @@ _KEYSET = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -334,7 +346,7 @@ KeySet = _reflection.GeneratedProtocolMessageType(
     {
         "DESCRIPTOR": _KEYSET,
         "__module__": "google.cloud.spanner_v1.proto.keys_pb2",
-        "__doc__": """\ ``KeySet`` defines a collection of Cloud Spanner keys and/or key
+        "__doc__": """``KeySet`` defines a collection of Cloud Spanner keys and/or key
   ranges. All the keys are expected to be in the same table or index.
   The keys need not be sorted in any particular way.  If the same key is
   specified multiple times in the set (for example if two ranges, two
